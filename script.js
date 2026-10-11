@@ -18,7 +18,7 @@ document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Replace this with your real agency email before publishing.
-const AGENCY_EMAIL = "hello@youragency.com";
+const AGENCY_EMAIL = "kaushal.dev0001@gmail.com";
 document.getElementById("contactForm").addEventListener("submit", event => {
   event.preventDefault();
   const form = event.currentTarget;
