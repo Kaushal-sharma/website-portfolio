@@ -34,6 +34,9 @@ document.getElementById("contactForm").addEventListener("submit", event => {
     "Project details:",
     data.get("message")
   ].join("\n");
-  document.getElementById("formNote").textContent = "Opening your email app. If it doesn't open, email " + AGENCY_EMAIL + " directly.";
+  console.log('TEST1')
+  console.log(body);
+  console.log('TEST2')
+  document.getElementById("contactForm").textContent = "Opening your email app. If it doesn't open, email " + AGENCY_EMAIL + " directly.";
   window.location.href = `mailto:${AGENCY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
