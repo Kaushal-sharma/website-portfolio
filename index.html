@@ -1,71 +1,566 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="NovaCraft creates modern websites, e-commerce stores, web apps and integrations for growing businesses.">
-<title>NovaCraft | Websites That Move Business Forward</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="announcement"><span class="pulse"></span> Now accepting select projects <a href="#contact">Let's talk ↗</a></div>
-<header class="header"><nav class="nav container">
-<a class="brand" href="#home"><span class="brand-mark">N</span><span>novacraft</span></a>
-<button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-<div class="nav-links" id="navLinks"><a href="#services">Services</a><a href="#work">Our work</a><a href="#process">Process</a><a href="#about">Why us</a><a class="nav-contact" href="#contact">Start a project ↗</a></div>
-</nav></header>
-<main>
-<section class="hero section" id="home"><div class="hero-orb orb-a"></div><div class="container hero-layout">
-<div class="hero-copy reveal"><div class="eyebrow"><span class="eyebrow-line"></span> YOUR DIGITAL GROWTH PARTNER</div>
-<h1>Your next website should do more than <em>look good.</em></h1>
-<p class="hero-description">We design and build fast, beautiful websites that earn trust, turn visitors into customers, and help ambitious businesses grow.</p>
-<div class="hero-buttons"><a href="#contact" class="button button-primary">Let's build your website <span>↗</span></a><a href="#work" class="text-link">Explore our work ↓</a></div>
-<div class="hero-proof"><div class="proof-avatars"><span>UX</span><span>WD</span><span>NC</span></div><p><strong>Built around your business</strong><br><small>Strategy · Design · Development · Support</small></p></div></div>
-<div class="hero-visual reveal"><div class="browser"><div class="browser-top"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-url">yourbusiness.com</div><span>•••</span></div>
-<div class="mock-site"><div class="mock-nav"><b>GOOD<span>FORM.</span></b><small>ABOUT　 SERVICES　 <strong>LET'S TALK ↗</strong></small></div><div class="mock-content"><small>DESIGNED TO STAND OUT</small><h2>Make room<br>for <em>better.</em></h2><p>A brand experience your customers remember.</p><b>DISCOVER MORE ↗</b></div><div class="mock-shape shape-one"></div><div class="mock-shape shape-two"></div><div class="mock-shape shape-three"></div><div class="mock-bottom">01 / BRAND STORY <span>SCROLL TO EXPLORE ↓</span></div></div></div>
-<div class="float-card float-one"><span>✦</span><div><b>Made for your goals</b><small>Not just another template</small></div></div><div class="float-card float-two"><span>↗</span><div><b>Responsive by design</b><small>Mobile · Tablet · Desktop</small></div></div><div class="decor">✳</div></div>
-</div><div class="container trusted-strip"><span>THE RIGHT DIGITAL FOUNDATION FOR</span><b>LOCAL BUSINESSES</b><b>GROWING BRANDS</b><b>CREATORS</b><b>ONLINE STORES</b></div></section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NovaCraft creates modern websites, e-commerce stores, web apps and integrations for growing businesses."
+    />
+    <title>NovaCraft | Websites That Move Business Forward</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<section class="services section" id="services"><div class="container"><div class="section-heading split-heading reveal"><div><div class="eyebrow">WHAT WE CAN BUILD</div><h2>Everything your business needs to <em>show up online.</em></h2></div><p>From your first landing page to a connected digital platform, we bring design, development and useful technology together.</p></div>
-<div class="service-grid">
-<article class="service-card featured reveal"><div class="service-top"><span class="service-icon">✳</span><span>01</span></div><h3>Business Websites</h3><p>Build credibility with a polished, responsive website that explains what you do and makes it easy for customers to contact you.</p><div class="tags"><i>Business sites</i><i>Landing pages</i><i>SEO foundations</i></div><div class="mini-window"><span></span><span></span><b></b></div></article>
-<article class="service-card reveal"><div class="service-top"><span class="service-icon purple">◇</span><span>02</span></div><h3>E-commerce</h3><p>Product pages and online shopping experiences designed to make browsing and buying feel effortless.</p><div class="tags"><i>Product catalogs</i><i>Checkout</i></div><div class="mini-shop">SHOP<br><b>THE EDIT.</b><span>↗</span></div></article>
-<article class="service-card reveal"><div class="service-top"><span class="service-icon orange">⌘</span><span>03</span></div><h3>Web Apps &amp; Portals</h3><p>Custom interfaces, dashboards and customer portals that help your business work smarter.</p><div class="tags"><i>Dashboards</i><i>Portals</i><i>Forms</i></div><div class="mini-dashboard"><i></i><i></i><i></i><b></b></div></article>
-<article class="service-card reveal"><div class="service-top"><span class="service-icon green">⤳</span><span>04</span></div><h3>Integrations &amp; Automation</h3><p>Connect forms, APIs, CRM tools and business workflows to reduce repetitive work.</p><div class="tags"><i>REST APIs</i><i>CRM</i><i>Automation</i></div><div class="mini-connect"><span>WEB</span> ↔ <span>CRM</span> ↔ <span>DATA</span></div></article>
-<article class="service-card reveal"><div class="service-top"><span class="service-icon blue">◉</span><span>05</span></div><h3>Redesign &amp; Optimization</h3><p>Refresh an outdated website with better usability, mobile layouts and a clearer customer journey.</p><div class="tags"><i>UI refresh</i><i>Performance</i></div><div class="mini-refresh"><span>OLD</span> → <b>NEW</b></div></article>
-<article class="service-card cta-card reveal"><div class="eyebrow">HAVE SOMETHING ELSE IN MIND?</div><h3>Let's shape the right solution together.</h3><a href="#contact" class="button button-primary">Tell us about it ↗</a><span class="cta-star">✦</span></article>
-</div></div></section>
+  <body>
+    <div class="announcement">
+      <span class="pulse"></span> Now accepting select projects
+      <a href="#contact">Let's talk ↗</a>
+    </div>
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="#home"
+          ><span class="brand-mark">N</span><span>novacraft</span></a
+        >
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#services">Services</a><a href="#work">Our work</a
+          ><a href="#process">Process</a><a href="#about">Why us</a
+          ><a class="nav-contact" href="#contact">Start a project ↗</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-orb orb-a"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span> YOUR DIGITAL GROWTH PARTNER
+            </div>
+            <h1>Your next website should do more than <em>look good.</em></h1>
+            <p class="hero-description">
+              We design and build fast, beautiful websites that earn trust, turn
+              visitors into customers, and help ambitious businesses grow.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="button button-primary"
+                >Let's build your website <span>↗</span></a
+              ><a href="#work" class="text-link">Explore our work ↓</a>
+            </div>
+            <div class="hero-proof">
+              <div class="proof-avatars">
+                <span>UX</span><span>WD</span><span>NC</span>
+              </div>
+              <p>
+                <strong>Built around your business</strong><br /><small
+                  >Strategy · Design · Development · Support</small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="browser">
+              <div class="browser-top">
+                <div class="browser-dots"><i></i><i></i><i></i></div>
+                <div class="browser-url">yourbusiness.com</div>
+                <span>•••</span>
+              </div>
+              <div class="mock-site">
+                <div class="mock-nav">
+                  <b>GOOD<span>FORM.</span></b
+                  ><small
+                    >ABOUT　 SERVICES　 <strong>LET'S TALK ↗</strong></small
+                  >
+                </div>
+                <div class="mock-content">
+                  <small>DESIGNED TO STAND OUT</small>
+                  <h2>Make room<br />for <em>better.</em></h2>
+                  <p>A brand experience your customers remember.</p>
+                  <b>DISCOVER MORE ↗</b>
+                </div>
+                <div class="mock-shape shape-one"></div>
+                <div class="mock-shape shape-two"></div>
+                <div class="mock-shape shape-three"></div>
+                <div class="mock-bottom">
+                  01 / BRAND STORY <span>SCROLL TO EXPLORE ↓</span>
+                </div>
+              </div>
+            </div>
+            <div class="float-card float-one">
+              <span>✦</span>
+              <div>
+                <b>Made for your goals</b
+                ><small>Not just another template</small>
+              </div>
+            </div>
+            <div class="float-card float-two">
+              <span>↗</span>
+              <div>
+                <b>Responsive by design</b
+                ><small>Mobile · Tablet · Desktop</small>
+              </div>
+            </div>
+            <div class="decor">✳</div>
+          </div>
+        </div>
+        <div class="container trusted-strip">
+          <span>THE RIGHT DIGITAL FOUNDATION FOR</span><b>LOCAL BUSINESSES</b
+          ><b>GROWING BRANDS</b><b>CREATORS</b><b>ONLINE STORES</b>
+        </div>
+      </section>
 
-<section class="work section" id="work"><div class="container"><div class="section-heading split-heading reveal"><div><div class="eyebrow">SELECTED CONCEPTS</div><h2>Thoughtful design.<br><em>Practical results.</em></h2></div><p>Every project starts with your audience, your goals and the job your website needs to do.</p></div>
-<div class="work-grid">
-<article class="work-card work-large reveal"><div class="work-art verdant"><div class="concept-nav"><b>VERDANT.</b><span>ABOUT　 COLLECTION　 CONTACT</span></div><div class="verdant-copy"><small>LIVE A LITTLE GREENER</small><h3>Good things<br>grow here.</h3><b>EXPLORE THE COLLECTION ↗</b></div><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div><div class="leaf leaf-c"></div><small class="art-note">CONCEPT / ONLINE STORE</small></div><div class="work-meta"><div><h3>Verdant — Lifestyle Store</h3><p>Product-led storefront concept with a calm, editorial visual system.</p></div><span>E-COMMERCE</span></div></article>
-<article class="work-card reveal"><div class="work-art wellness"><div class="wellness-card"><small>THE WELLNESS STUDIO</small><h3>Find your<br>balance.</h3><p>Move better. Feel better.</p><b>BOOK A SESSION ↗</b></div><div class="sun"></div><small class="art-note">CONCEPT / SERVICE BUSINESS</small></div><div class="work-meta"><div><h3>Wellness Studio</h3><p>A warm, welcoming service-brand concept.</p></div><span>BUSINESS SITE</span></div></article>
-<article class="work-card reveal"><div class="work-art flowstate"><div class="flow-nav"><b>flowstate</b><span>Product　 Resources　 <strong>GET STARTED ↗</strong></span></div><div class="flow-copy"><small>LESS BUSYWORK. MORE MOMENTUM.</small><h3>Your work,<br>in <em>flow.</em></h3><p>One clear space for your team's next big thing.</p></div><div class="flow-panels"><i></i><i></i><i></i></div><small class="art-note">CONCEPT / SAAS LANDING PAGE</small></div><div class="work-meta"><div><h3>Flowstate — SaaS Landing Page</h3><p>A product-focused layout that explains value clearly.</p></div><span>LANDING PAGE</span></div></article>
-</div><p class="portfolio-note">These are illustrative design concepts. Replace them with real client projects as your agency grows.</p></div></section>
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <div class="eyebrow">WHAT WE CAN BUILD</div>
+              <h2>
+                Everything your business needs to <em>show up online.</em>
+              </h2>
+            </div>
+            <p>
+              From your first landing page to a connected digital platform, we
+              bring design, development and useful technology together.
+            </p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card featured reveal">
+              <div class="service-top">
+                <span class="service-icon">✳</span><span>01</span>
+              </div>
+              <h3>Business Websites</h3>
+              <p>
+                Build credibility with a polished, responsive website that
+                explains what you do and makes it easy for customers to contact
+                you.
+              </p>
+              <div class="tags">
+                <i>Business sites</i><i>Landing pages</i><i>SEO foundations</i>
+              </div>
+              <div class="mini-window"><span></span><span></span><b></b></div>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-icon purple">◇</span><span>02</span>
+              </div>
+              <h3>E-commerce</h3>
+              <p>
+                Product pages and online shopping experiences designed to make
+                browsing and buying feel effortless.
+              </p>
+              <div class="tags"><i>Product catalogs</i><i>Checkout</i></div>
+              <div class="mini-shop">
+                SHOP<br /><b>THE EDIT.</b><span>↗</span>
+              </div>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-icon orange">⌘</span><span>03</span>
+              </div>
+              <h3>Web Apps &amp; Portals</h3>
+              <p>
+                Custom interfaces, dashboards and customer portals that help
+                your business work smarter.
+              </p>
+              <div class="tags">
+                <i>Dashboards</i><i>Portals</i><i>Forms</i>
+              </div>
+              <div class="mini-dashboard"><i></i><i></i><i></i><b></b></div>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-icon green">⤳</span><span>04</span>
+              </div>
+              <h3>Integrations &amp; Automation</h3>
+              <p>
+                Connect forms, APIs, CRM tools and business workflows to reduce
+                repetitive work.
+              </p>
+              <div class="tags">
+                <i>REST APIs</i><i>CRM</i><i>Automation</i>
+              </div>
+              <div class="mini-connect">
+                <span>WEB</span> ↔ <span>CRM</span> ↔ <span>DATA</span>
+              </div>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-icon blue">◉</span><span>05</span>
+              </div>
+              <h3>Redesign &amp; Optimization</h3>
+              <p>
+                Refresh an outdated website with better usability, mobile
+                layouts and a clearer customer journey.
+              </p>
+              <div class="tags"><i>UI refresh</i><i>Performance</i></div>
+              <div class="mini-refresh"><span>OLD</span> → <b>NEW</b></div>
+            </article>
+            <article class="service-card cta-card reveal">
+              <div class="eyebrow">HAVE SOMETHING ELSE IN MIND?</div>
+              <h3>Let's shape the right solution together.</h3>
+              <a href="#contact" class="button button-primary"
+                >Tell us about it ↗</a
+              ><span class="cta-star">✦</span>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section class="process section" id="process"><div class="container"><div class="section-heading center-heading reveal"><div class="eyebrow">A CLEAR, COLLABORATIVE PROCESS</div><h2>From first idea to <em>launch day.</em></h2><p>No mystery. No unnecessary complexity. Just a clear path to a website you feel good about.</p></div>
-<div class="process-grid"><article class="process-step reveal"><span>01</span><div>◌</div><h3>Discover</h3><p>We learn about your business, audience, goals and must-have features.</p><small>BRIEF · GOALS · SCOPE</small></article><article class="process-step reveal"><span>02</span><div>✎</div><h3>Design</h3><p>We plan the structure and visual direction around your brand and users.</p><small>LAYOUT · CONTENT · UI</small></article><article class="process-step reveal"><span>03</span><div>⌘</div><h3>Develop</h3><p>We build, test and refine your website across modern devices and browsers.</p><small>CODE · INTEGRATION · QA</small></article><article class="process-step reveal"><span>04</span><div>↗</div><h3>Launch &amp; Support</h3><p>We help publish your site and can discuss ongoing care as you grow.</p><small>DEPLOY · HANDOVER · CARE</small></article></div></div></section>
+      <section class="work section" id="work">
+        <div class="container">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <div class="eyebrow">SELECTED CONCEPTS</div>
+              <h2>Thoughtful design.<br /><em>Practical results.</em></h2>
+            </div>
+            <p>
+              Every project starts with your audience, your goals and the job
+              your website needs to do.
+            </p>
+          </div>
+          <div class="work-grid">
+            <article class="work-card work-large reveal">
+              <div class="work-art verdant">
+                <div class="concept-nav">
+                  <b>VERDANT.</b><span>ABOUT　 COLLECTION　 CONTACT</span>
+                </div>
+                <div class="verdant-copy">
+                  <small>LIVE A LITTLE GREENER</small>
+                  <h3>Good things<br />grow here.</h3>
+                  <b>EXPLORE THE COLLECTION ↗</b>
+                </div>
+                <div class="leaf leaf-a"></div>
+                <div class="leaf leaf-b"></div>
+                <div class="leaf leaf-c"></div>
+                <small class="art-note">CONCEPT / ONLINE STORE</small>
+              </div>
+              <div class="work-meta">
+                <div>
+                  <h3>Verdant — Lifestyle Store</h3>
+                  <p>
+                    Product-led storefront concept with a calm, editorial visual
+                    system.
+                  </p>
+                </div>
+                <span>E-COMMERCE</span>
+              </div>
+            </article>
+            <article class="work-card reveal">
+              <div class="work-art wellness">
+                <div class="wellness-card">
+                  <small>THE WELLNESS STUDIO</small>
+                  <h3>Find your<br />balance.</h3>
+                  <p>Move better. Feel better.</p>
+                  <b>BOOK A SESSION ↗</b>
+                </div>
+                <div class="sun"></div>
+                <small class="art-note">CONCEPT / SERVICE BUSINESS</small>
+              </div>
+              <div class="work-meta">
+                <div>
+                  <h3>Wellness Studio</h3>
+                  <p>A warm, welcoming service-brand concept.</p>
+                </div>
+                <span>BUSINESS SITE</span>
+              </div>
+            </article>
+            <article class="work-card reveal">
+              <div class="work-art flowstate">
+                <div class="flow-nav">
+                  <b>flowstate</b
+                  ><span
+                    >Product　 Resources　 <strong>GET STARTED ↗</strong></span
+                  >
+                </div>
+                <div class="flow-copy">
+                  <small>LESS BUSYWORK. MORE MOMENTUM.</small>
+                  <h3>Your work,<br />in <em>flow.</em></h3>
+                  <p>One clear space for your team's next big thing.</p>
+                </div>
+                <div class="flow-panels"><i></i><i></i><i></i></div>
+                <small class="art-note">CONCEPT / SAAS LANDING PAGE</small>
+              </div>
+              <div class="work-meta">
+                <div>
+                  <h3>Flowstate — SaaS Landing Page</h3>
+                  <p>A product-focused layout that explains value clearly.</p>
+                </div>
+                <span>LANDING PAGE</span>
+              </div>
+            </article>
+          </div>
+          <p class="portfolio-note">
+            These are illustrative design concepts. Replace them with real
+            client projects as your agency grows.
+          </p>
+        </div>
+      </section>
 
-<section class="about section" id="about"><div class="container about-layout"><div class="about-visual reveal"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="about-center"><span>N</span><b>YOUR BUSINESS<br>DESERVES BETTER.</b></div><i class="chip chip-one">Design</i><i class="chip chip-two">Technology</i><i class="chip chip-three">Growth</i></div>
-<div class="about-copy reveal"><div class="eyebrow">WHY NOVACRAFT</div><h2>A small studio mindset.<br><em>A big-picture approach.</em></h2><p>We believe good websites come from understanding the business first. That means thoughtful communication, sensible technology choices and a focus on the people who will use your site.</p><div class="value-list"><div><span>✓</span><p><b>Built around your goals</b><small>Every feature should have a purpose.</small></p></div><div><span>✓</span><p><b>Technology that fits</b><small>Use the right tools, not complexity for its own sake.</small></p></div><div><span>✓</span><p><b>Clear communication</b><small>Know what's happening at every stage.</small></p></div></div></div></div></section>
+      <section class="process section" id="process">
+        <div class="container">
+          <div class="section-heading center-heading reveal">
+            <div class="eyebrow">A CLEAR, COLLABORATIVE PROCESS</div>
+            <h2>From first idea to <em>launch day.</em></h2>
+            <p>
+              No mystery. No unnecessary complexity. Just a clear path to a
+              website you feel good about.
+            </p>
+          </div>
+          <div class="process-grid">
+            <article class="process-step reveal">
+              <span>01</span>
+              <div>◌</div>
+              <h3>Discover</h3>
+              <p>
+                We learn about your business, audience, goals and must-have
+                features.
+              </p>
+              <small>BRIEF · GOALS · SCOPE</small>
+            </article>
+            <article class="process-step reveal">
+              <span>02</span>
+              <div>✎</div>
+              <h3>Design</h3>
+              <p>
+                We plan the structure and visual direction around your brand and
+                users.
+              </p>
+              <small>LAYOUT · CONTENT · UI</small>
+            </article>
+            <article class="process-step reveal">
+              <span>03</span>
+              <div>⌘</div>
+              <h3>Develop</h3>
+              <p>
+                We build, test and refine your website across modern devices and
+                browsers.
+              </p>
+              <small>CODE · INTEGRATION · QA</small>
+            </article>
+            <article class="process-step reveal">
+              <span>04</span>
+              <div>↗</div>
+              <h3>Launch &amp; Support</h3>
+              <p>
+                We help publish your site and can discuss ongoing care as you
+                grow.
+              </p>
+              <small>DEPLOY · HANDOVER · CARE</small>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section class="faq section"><div class="container faq-layout"><div class="section-heading reveal"><div class="eyebrow">GOOD QUESTIONS</div><h2>Before we <em>get started.</em></h2><p>Here are a few things clients often want to know.</p></div><div class="faq-list reveal">
-<details><summary>How much does a website cost? <span>+</span></summary><p>Pricing depends on page count, design, integrations and features. Share your requirements and we'll discuss a suitable scope and estimate.</p></details>
-<details><summary>How long does a project take? <span>+</span></summary><p>A simple website usually takes less time than a custom web app or e-commerce project. We'll agree on milestones after understanding your needs.</p></details>
-<details><summary>Can you update my existing website? <span>+</span></summary><p>Yes. We can discuss a redesign, responsive improvements, new pages, performance improvements or integrations.</p></details>
-<details><summary>Will I be able to manage the website? <span>+</span></summary><p>We can plan an appropriate editing approach and provide a handover for the parts of the site included in the project.</p></details>
-</div></div></section>
+      <section class="about section" id="about">
+        <div class="container about-layout">
+          <div class="about-visual reveal">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="about-center">
+              <span>N</span><b>YOUR BUSINESS<br />DESERVES BETTER.</b>
+            </div>
+            <i class="chip chip-one">Design</i
+            ><i class="chip chip-two">Technology</i
+            ><i class="chip chip-three">Growth</i>
+          </div>
+          <div class="about-copy reveal">
+            <div class="eyebrow">WHY NOVACRAFT</div>
+            <h2>
+              A small studio mindset.<br /><em>A big-picture approach.</em>
+            </h2>
+            <p>
+              We believe good websites come from understanding the business
+              first. That means thoughtful communication, sensible technology
+              choices and a focus on the people who will use your site.
+            </p>
+            <div class="value-list">
+              <div>
+                <span>✓</span>
+                <p>
+                  <b>Built around your goals</b
+                  ><small>Every feature should have a purpose.</small>
+                </p>
+              </div>
+              <div>
+                <span>✓</span>
+                <p>
+                  <b>Technology that fits</b
+                  ><small
+                    >Use the right tools, not complexity for its own
+                    sake.</small
+                  >
+                </p>
+              </div>
+              <div>
+                <span>✓</span>
+                <p>
+                  <b>Clear communication</b
+                  ><small>Know what's happening at every stage.</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="contact section" id="contact"><div class="container contact-panel reveal"><div class="contact-copy"><div class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</div><h2>Let's make your<br><em>website work harder.</em></h2><p>Tell us what you're building. We'll get back to you to discuss your goals, options and next steps.</p><div class="contact-mini"><span>✦</span><p><b>Good projects start with a conversation.</b><small>No pressure. Just a useful first discussion.</small></p></div></div>
-<form class="contact-form" id="contactForm"><div class="form-heading"><h3>Tell us about your project</h3><p>Fields marked * are required.</p></div>
-<label for="name">Your name *</label><input id="name" name="name" type="text" placeholder="e.g. Priya Sharma" required>
-<label for="email">Work email *</label><input id="email" name="email" type="email" placeholder="you@company.com" required>
-<label for="service">What do you need? *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Business website</option><option>E-commerce website</option><option>Web app or portal</option><option>Integrations and automation</option><option>Website redesign</option><option>Something else</option></select>
-<label for="budget">Estimated budget</label><select id="budget" name="budget"><option value="">Choose a range (optional)</option><option>Under ₹15,000</option><option>₹15,000 – ₹40,000</option><option>₹40,000 – ₹1,00,000</option><option>₹1,00,000+</option><option>Let's discuss</option></select>
-<label for="message">A little about your project *</label><textarea id="message" name="message" rows="4" placeholder="What would you like your website to help you achieve?" required></textarea>
-<button class="button button-primary submit-button" type="submit">Prepare project enquiry ↗</button></form></div></section>
-</main>
-<footer class="footer"><div class="container footer-main"><a class="brand" href="#home"><span class="brand-mark">N</span><span>novacraft<span class="brand-light">studio</span></span></a><p>Thoughtful websites for businesses ready to grow.</p><div class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> NovaCraft. All rights reserved.</span><a href="#home">Back to top ↑</a></div></footer>
-<script src="script.js"></script>
-</body></html>
+      <section class="faq section">
+        <div class="container faq-layout">
+          <div class="section-heading reveal">
+            <div class="eyebrow">GOOD QUESTIONS</div>
+            <h2>Before we <em>get started.</em></h2>
+            <p>Here are a few things clients often want to know.</p>
+          </div>
+          <div class="faq-list reveal">
+            <details>
+              <summary>How much does a website cost? <span>+</span></summary>
+              <p>
+                Pricing depends on page count, design, integrations and
+                features. Share your requirements and we'll discuss a suitable
+                scope and estimate.
+              </p>
+            </details>
+            <details>
+              <summary>How long does a project take? <span>+</span></summary>
+              <p>
+                A simple website usually takes less time than a custom web app
+                or e-commerce project. We'll agree on milestones after
+                understanding your needs.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Can you update my existing website? <span>+</span>
+              </summary>
+              <p>
+                Yes. We can discuss a redesign, responsive improvements, new
+                pages, performance improvements or integrations.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Will I be able to manage the website? <span>+</span>
+              </summary>
+              <p>
+                We can plan an appropriate editing approach and provide a
+                handover for the parts of the site included in the project.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-panel reveal">
+          <div class="contact-copy">
+            <div class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</div>
+            <h2>Let's make your<br /><em>website work harder.</em></h2>
+            <p>
+              Tell us what you're building. We'll get back to you to discuss
+              your goals, options and next steps.
+            </p>
+            <div class="contact-mini">
+              <span>✦</span>
+              <p>
+                <b>Good projects start with a conversation.</b
+                ><small>No pressure. Just a useful first discussion.</small>
+              </p>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-heading">
+              <h3>Tell us about your project</h3>
+              <p>Fields marked * are required.</p>
+            </div>
+            <label for="firstName">Your name *</label>
+            <input
+              id="firstName"
+              name="firstName"
+              type="text"
+              placeholder="e.g. Priya Sharma"
+              required
+            />
+            <label for="lastName">Last name *</label>
+            <input
+              id="lastName"
+              name="lastName"
+              type="text"
+              placeholder="e.g. Sharma"
+              required
+            />
+            <label for="email">Work email *</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@company.com"
+              required
+            />
+            <label for="phone">Phone number</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="e.g. +91 98765 43210"
+              required
+            />
+            <label for="service">What do you need? *</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Business website</option>
+              <option>E-commerce website</option>
+              <option>Web app or portal</option>
+              <option>Integrations and automation</option>
+              <option>Website redesign</option>
+              <option>Something else</option>
+            </select>
+            <label for="message">A little about your project *</label
+            ><textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="What would you like your website to help you achieve?"
+              required
+            ></textarea>
+            <button class="button button-primary submit-button" type="submit">
+              Prepare project enquiry ↗
+            </button>
+          </form>
+        </div>
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNBtqmyiZ1AbmWrbN4AYynFI8fHy2UD6hpeOo3O_-lu-bZMg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-main">
+        <a class="brand" href="#home"
+          ><span class="brand-mark">N</span
+          ><span>novacraft<span class="brand-light">studio</span></span></a
+        >
+        <p>Thoughtful websites for businesses ready to grow.</p>
+        <div class="footer-links">
+          <a href="#services">Services</a><a href="#work">Work</a
+          ><a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> NovaCraft. All rights reserved.</span
+        ><a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

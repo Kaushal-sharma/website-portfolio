@@ -17,26 +17,34 @@ const observer = new IntersectionObserver((entries, obs) => {
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Replace this with your real agency email before publishing.
-const AGENCY_EMAIL = "kaushal.dev0001@gmail.com";
-document.getElementById("contactForm").addEventListener("submit", event => {
+// Form submission.
+document.getElementById("contactForm").addEventListener("submit", async event => {
   event.preventDefault();
   const form = event.currentTarget;
   if (!form.reportValidity()) return;
+
   const data = new FormData(form);
-  const subject = `Website project enquiry — ${data.get("name")}`;
-  const body = [
-    `Name: ${data.get("name")}`,
-    `Email: ${data.get("email")}`,
-    `Service: ${data.get("service")}`,
-    `Estimated budget: ${data.get("budget") || "Not specified"}`,
-    "",
-    "Project details:",
-    data.get("message")
-  ].join("\n");
-  console.log('TEST1')
-  console.log(body);
-  console.log('TEST2')
-  document.getElementById("contactForm").textContent = "Opening your email app. If it doesn't open, email " + AGENCY_EMAIL + " directly.";
-  window.location.href = `mailto:${AGENCY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  try {
+  const leadUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeNBtqmyiZ1AbmWrbN4AYynFI8fHy2UD6hpeOo3O_-lu-bZMg/formResponse";
+  const params = new URLSearchParams();
+
+  params.append("entry.1257747404", data.get("firstName"));
+  params.append("entry.1935953515", data.get("lastName"));
+  params.append("entry.753153344", data.get("email"));
+  params.append("entry.1793494837", data.get("phone"));
+  params.append("entry.1387975046", data.get("service"));
+  params.append("entry.981337565", data.get("message"));
+
+  await fetch(leadUrl, {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: params.toString(),
+  });
+  } catch (error) {
+    console.error("Error submitting form data to Google Forms:", error);
+  }
 });
