@@ -484,59 +484,33 @@
               <h3>Tell us about your project</h3>
               <p>Fields marked * are required.</p>
             </div>
-            <label for="firstName">Your name *</label>
-            <input
-              id="firstName"
-              name="firstName"
-              type="text"
-              placeholder="e.g. Priya Sharma"
-              required
-            />
-            <label for="lastName">Last name *</label>
-            <input
-              id="lastName"
-              name="lastName"
-              type="text"
-              placeholder="e.g. Sharma"
-              required
-            />
-            <label for="email">Work email *</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="you@company.com"
-              required
-            />
+            <label for="firstName">Your name</label>
+            <input id="firstName" name="firstName" type="text" placeholder="e.g. Priya Sharma" required />
+            <label for="lastName">Last name</label>
+            <input id="lastName" name="lastName" type="text" placeholder="e.g. Sharma" required />
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" required />
             <label for="phone">Phone number</label>
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-              placeholder="e.g. +91 98765 43210"
-              required
-            />
-            <label for="service">What do you need? *</label>
+            <div class="input-with-icon">
+              <img src="./assets/images/india_flag.webp" alt="Indian flag" class="input-icon" />
+              <input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[0-9]{10}" placeholder="e.g. +91 98765 43210" required />
+            </div>
+            <label for="service">What do you need?</label>
             <select id="service" name="service" required>
               <option value="">Choose a service</option>
               <option>Business website</option>
+              <option>Booking & Event Websites</option>
+              <option>Blogs & News/Magazine Sites</option>
               <option>E-commerce website</option>
-              <option>Web app or portal</option>
+              <option>Educational website</option>
               <option>Integrations and automation</option>
-              <option>Website redesign</option>
+              <option>Portfolio website</option>
+              <option>Website Updates</option>
               <option>Something else</option>
             </select>
-            <label for="message">A little about your project *</label
-            ><textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="What would you like your website to help you achieve?"
-              required
-            ></textarea>
-            <button class="button button-primary submit-button" type="submit">
-              Prepare project enquiry ↗
-            </button>
+            <label for="message">A little about your project</label>
+            <textarea id="message" name="message" rows="4" placeholder="What would you like your website to help you achieve?" required ></textarea>
+            <button class="button button-primary submit-button" type="submit"> Prepare project enquiry ↗ </button>
           </form>
         </div>        
       </section>
@@ -545,7 +519,7 @@
       <div class="container footer-main">
         <a class="brand" href="#home"
           ><span class="brand-mark">N</span
-          ><span>novacraft<span class="brand-light">studio</span></span></a
+          ><span>novacraft</span></a
         >
         <p>Thoughtful websites for businesses ready to grow.</p>
         <div class="footer-links">

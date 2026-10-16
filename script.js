@@ -18,14 +18,63 @@ document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Form submission.
-document.getElementById("contactForm").addEventListener("submit", async event => {
+const contactForm = document.getElementById("contactForm");
+
+function validateField(field) {
+  let isValid = field.checkValidity();
+
+  // Additional email format validation
+  if (field.type === "email" && field.value.trim() !== "") {
+    const emailRegex =
+      /^[a-zA-Z0-9_%+-]+(?:\.[a-zA-Z0-9_%+-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,}$/;
+
+    isValid = emailRegex.test(field.value.trim());
+  }
+
+  field.classList.toggle("invalid", !isValid);
+  return isValid;
+}
+
+// Validate when the user leaves a field.
+contactForm.querySelectorAll("input, select, textarea").forEach(field => {
+  field.addEventListener("blur", () => {
+    validateField(field);
+  });
+
+  // Remove the red border as soon as the field becomes valid.
+  field.addEventListener("input", () => {
+    if (field.classList.contains("invalid")) {
+      validateField(field);
+    }
+  });
+
+  field.addEventListener("change", () => {
+    if (field.classList.contains("invalid")) {
+      validateField(field);
+    }
+  });
+});
+
+// Form submission.
+contactForm.addEventListener("submit", async event => {
   event.preventDefault();
-  const form = event.currentTarget;
-  if (!form.reportValidity()) return;
 
-  const data = new FormData(form);
+  const fields = contactForm.querySelectorAll("input, select, textarea");
+  let isFormValid = true;
 
-  try {
+  fields.forEach(field => {
+    if (!validateField(field)) {
+      isFormValid = false;
+    }
+  });
+
+  if (!isFormValid) {
+    contactForm.querySelector(".invalid")?.focus();
+    return;
+  }
+
+  const data = new FormData(contactForm);
+
   const leadUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeNBtqmyiZ1AbmWrbN4AYynFI8fHy2UD6hpeOo3O_-lu-bZMg/formResponse";
   const params = new URLSearchParams();
 
@@ -35,16 +84,21 @@ document.getElementById("contactForm").addEventListener("submit", async event =>
   params.append("entry.1793494837", data.get("phone"));
   params.append("entry.1387975046", data.get("service"));
   params.append("entry.981337565", data.get("message"));
+  
+  try {
+     await fetch(leadUrl, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: params.toString()
+    });
+    contactForm.reset();
 
-  await fetch(leadUrl, {
-    method: "POST",
-    mode: "no-cors",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: params.toString(),
-  });
+    fields.forEach(field => field.classList.remove("invalid"));
+
   } catch (error) {
-    console.error("Error submitting form data to Google Forms:", error);
+    console.error("Error submitting form data:", error);
   }
 });
